@@ -7,7 +7,7 @@ const props = withDefaults(
     text?: boolean;
     outlined?: boolean;
     as?: "button" | "RouterLink";
-    to?: object;
+    to?: object | string;
     loading?: boolean;
     disabled?: boolean;
   }>(),

@@ -37,6 +37,15 @@ const testimonials = [
       "Babatunde has been of a great availability and understanding. He perfectly filled the job I hired him for, and provided me great, targeted and useful datas. He didn't managed his efforts, even when facing some difficulties with some specific datas, to accomplish the mission. I warmly recommend him.",
     date: "12th December 2024",
   },
+
+  {
+    id: 5,
+    name: "Onyeka Felix",
+    rating: 4.5,
+    comment:
+      "I want to appreciate BabsLead for his coaching style, which was supportive, encouraging, positive and tailored to my specific needs. He take his time to understand my goals and objectives, and provided actionable advice and feedback that helped me improve my LinkedIn presence, my CV and upwork profile. I highly recommend Babatunde to anyone looking to enhance their professional online presence!",
+    date: "12th December 2024",
+  },
 ];
 
 const testimonialContainer = ref();

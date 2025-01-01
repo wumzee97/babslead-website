@@ -61,7 +61,7 @@ const features: IFeatures[] = [
               profile optimization and sales outreach.
             </p>
 
-            <AppSubmitButton type="button" class="bg-[#FAD536] !text-dark-brown mt-10"
+            <AppSubmitButton type="button" class="!bg-[#FAD536] !text-dark-brown mt-10"
               >View Our Packages</AppSubmitButton
             >
           </div>

@@ -8,7 +8,7 @@ interface TestimonialProps {
     rating: number;
     comment: string;
     date: string;
-    image: string;
+    image: string | undefined;
     designation: string;
   };
 }

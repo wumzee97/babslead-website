@@ -27,6 +27,7 @@ const testimonials = [
     id: 2,
     name: "Ulrich Van",
     image: UlrichImg,
+    designation: '',
     rating: 5,
     comment: "Great Copywriter, very professional and very engaging.",
     date: "12th December 2024",
@@ -35,6 +36,7 @@ const testimonials = [
     id: 3,
     name: "Nico Garcia",
     image: NicoGarciaImg,
+    designation: '',
     rating: 4.5,
     comment:
       "Probably one of the most talented and committed writers on this platform. Highly recommended.",
@@ -43,6 +45,8 @@ const testimonials = [
   {
     id: 4,
     name: "Geoffrey",
+    designation: '',
+    image: undefined,
     rating: 4.5,
     comment:
       "Babatunde has been of a great availability and understanding. He perfectly filled the job I hired him for, and provided me great, targeted and useful datas. He didn't managed his efforts, even when facing some difficulties with some specific datas, to accomplish the mission. I warmly recommend him.",

@@ -31,7 +31,7 @@ const packages = [
 </script>
 
 <template>
-  <div class="py-24 bg-light-yellow">
+  <div class="py-24 bg-light-yellow" id="packages">
     <div class="container max-w-7xl mx-auto px-5 md:px-16 2xl:px-0 pb-16">
       <p class="font-semibold text-4xl lg:text-5xl text-dark-brown text-center">
         Which Package Do We Offer?

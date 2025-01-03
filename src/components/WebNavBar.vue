@@ -75,7 +75,7 @@ onUnmounted(() => {
         >
         <RouterLink
           class="text-xl hover:text-[#FAD536] transition-colors"
-          to="/#reviews"
+          to="/#packages"
           >Packages </RouterLink
         >
         <RouterLink

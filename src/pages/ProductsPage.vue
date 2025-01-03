@@ -1,46 +1,138 @@
 <script lang="ts" setup>
-const packages = [
+import  AppSubmitButton from "@/components/AppSubmitButton.vue";
+import IconCheckCircle from "@/components/icons/IconCheckCircle.vue";
+import LinkedInGM from '@/assets/images/linkedInGM.png'
+import XGO from '@/assets/images/xgo.png'
+import XGM from '@/assets/images/XGM.png'
+import LinkedInGO from '@/assets/images/linkedInGO.png'
+import WebsiteCopywriting from '@/assets/images/website.copywriting.png'
+import SeoCopywriting from '@/assets/images/seo.copywriting.png'
+import LogoDesign from '@/assets/images/logo.design.png'
+import LinkedXCoaching from '@/assets/images/linkedinxcoaching.png'
+import UpworkCoaching from '@/assets/images/upwork.coaching.png'
+
+const services = [
   {
-    title: "Branding",
-    description:
-      "We assist you craft a brand identity that speaks to your personality and is easily recognisable. ",
-    image: BrandingImgRef,
+    name: "LinkedIn Ghost Marketing",
+    image: LinkedInGM,
+    offers: [
+      "Research",
+      "Content strategy",
+      "2 strategy calls",
+      "Designs",
+      "5 posts per week",
+      "2 Reviews",
+      "Post scheduling ",
+      "Profile management",
+      "30 engagement per day",
+      "20 sales outreach per day",
+      "24/7 support via WhatsApp",
+    ],
   },
   {
-    title: "Content Creation",
-    description:
-      "We craft powerful and engaging content that appeals to your audience. ",
-    image: ContentCreationImgRef,
+    name: "X Ghost-Marketing ",
+    image: XGM,
+    offers: [
+      "Research",
+      "Content strategy",
+      "2 strategy calls",
+      "Designs",
+      "8 shorts tweets/2 long posts per week",
+      "2 Reviews",
+      "Posts scheduling",
+      "Profile management",
+      "30 engagements per day",
+      "20 sales outreach per day",
+      "24/7 support via WhatsApp",
+    ],
   },
   {
-    title: "Designs",
-    description:
-      "We help you create stunning visuals that appeal and capture your audience's attention. ",
-    image: DesignsImgRef,
+    name: " LI Ghostwriting/Optimization",
+    image: LinkedInGO,
+    offers: [
+      "Research ",
+      "Content strategy",
+      "2 strategy calls",
+      "Banner/ feature card design",
+      "5 posts per week",
+      "1 Review",
+      "24/7 support via WhatsApp",
+    ],
   },
   {
-    title: "Sales Outreach",
-    description:
-      "We support your brand via personalized sales outreach to 3x your revenue. ",
-    image: ProfileManagementImgRef,
+    name: "X Ghostwriting/Optimization",
+    image: XGO,
+    offers: [
+      "Research",
+      "Content strategy",
+      "2 strategy calls",
+      "Banner design",
+      "8 shorts tweets / 2 long form posts per week",
+      "1 Review",
+      "24/7 support WhatsApp",
+    ],
   },
   {
-    title: "Profile Management",
-    description:
-      "We support your brand via personalized sales outreach to 3x your revenue. ",
-    image: ProfileManagementImgRef,
+    name: "Website copywriting",
+    image: WebsiteCopywriting,
+    offers: [
+      "Research",
+      "Strategy call",
+      "Copy structure outline",
+      "Copywriting",
+      "2 revisions",
+      "Review",
+    ],
   },
   {
-    title: "Profile Optimization",
-    image: ProfileOptimizationImgRef,
+    name: "SEO copywriting",
+    image: SeoCopywriting,
+    offers: [
+      "Strategy call",
+      "Research",
+      "Copy structure outline",
+      "Copywriting",
+      "2 revisions",
+      "Review",
+    ],
+  },
+  {
+    name: "Logo Design and Branding",
+    image: LogoDesign,
+    offers: [
+      "2 Intro logo designs",
+      "Full brand guide",
+      "Full branding",
+      "Color pallette",
+      "Brand assets ",
+      "3 revisions",
+      "Access to PNG, JPEG, raw file ( pad) ",
+      "12 - 15 working days delivery",
+    ],
+  },
+  {
+    name: "LinkedIn/X coaching ",
+    image: LinkedXCoaching,
+    offers: [
+      "2 sessions",
+      "2 hours video call",
+      "DFU profile optimization",
+      "Tips on understanding the algorithm",
+      "Understanding content strategy",
+    ],
+  },
+  {
+    name: "Upwork Coaching",
+    image: UpworkCoaching,
+    offers: [
+      "2 Sessions",
+      "2 hours video call",
+      "DFU profile optimization",
+      "Tips on how to propose for jobs",
+      "Tips on understanding up work algorithm",
+    ],
   },
 ];
-
-import ContentCreationImgRef from "@/assets/images/content-creation.png";
-import BrandingImgRef from "@/assets/images/branding.png";
-import DesignsImgRef from "@/assets/images/designs.png";
-import ProfileManagementImgRef from "@/assets/images/profile-management.png";
-import ProfileOptimizationImgRef from "@/assets/images/profile-optimization.png";
 </script>
 <template>
   <div class="relative -mt-[190px] pt-44">
@@ -68,9 +160,9 @@ import ProfileOptimizationImgRef from "@/assets/images/profile-optimization.png"
     </div>
   </div>
 
-  <div class="bg-dark lg:py-24 px-5 md:px-16 2xl:px-0">
+  <div class="bg-dark lg:py-24 py-12 px-5 md:px-16 2xl:px-0">
     <div class="container max-w-7xl mx-auto">
-      <p class="text-white text-5xl font-semibold leading-[1.2em]">
+      <p class="text-white text-3xl lg:text-5xl font-semibold leading-[1.2em]">
         All Of The Products We Provide Are
         <span class="text-success-500">Digital </span>. But What Is A
         <span class="text-success-500">Digital Product?</span>
@@ -89,13 +181,36 @@ import ProfileOptimizationImgRef from "@/assets/images/profile-optimization.png"
 
   <div class="bg-dark/95 lg:py-24 px-5 md:px-16 2xl:px-0">
     <div class="container max-w-7xl mx-auto">
-      <p class="text-white text-center text-4xl font-semibold leading-[1.2em]">
-        Why Are <span class="text-success-500">Digital Products</span> Becoming
-        More Common?
-      </p>
-      <p class="text-white leading-[1.5rem] text-center mt-6">
-        Millions of digital products are being sold online every day.
-      </p>
+      <div class="lg:grid grid-cols-3 gap-6">
+        <div
+          v-for="service in services"
+          :key="service.name"
+          class="border border-gray-50/30 rounded-md p-6 flex  flex-col items-center mb-6 lg:mb-0"
+        >
+          <img
+            :src="service.image"
+            class="h-44 w-44 rounded-full"
+            alt=""
+          />
+
+          <p class="text-white font-semibold text-2xl mt-3 text-center">
+            {{ service.name }}
+          </p>
+
+          <span class="text-light-yellow text-s mt-5 lg:min-h-64">
+            <span
+              class="flex gap-3"
+              v-for="offer in service.offers"
+              :key="offer"
+            >
+              <IconCheckCircle />
+              {{ offer }}
+            </span>
+          </span>
+
+          <AppSubmitButton class="mt-5 !bg-[#FAD536] !text-dark-brown lg:!w-auto">Schedule a Meeting</AppSubmitButton>
+        </div>
+      </div>
     </div>
   </div>
 </template>

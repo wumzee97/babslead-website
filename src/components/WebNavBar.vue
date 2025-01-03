@@ -71,7 +71,7 @@ onUnmounted(() => {
             'hover:text-[#FAD536]',
           ]"
           :to="{ name: RouteName.ProductsPage }"
-          >Products</RouterLink
+          >Services</RouterLink
         >
         <RouterLink
           class="text-xl hover:text-[#FAD536] transition-colors"
@@ -81,7 +81,7 @@ onUnmounted(() => {
         <RouterLink
           class="text-xl hover:text-[#FAD536] transition-colors"
           to="/#faq"
-          >Services </RouterLink
+          >Blog </RouterLink
         >
       </div>
       <div>

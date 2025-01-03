@@ -27,10 +27,16 @@ const router = createRouter({
           component: () => import("./pages/AboutPage.vue"),
         },
         {
-          path: "products",
+          path: "services",
           name: RouteName.ProductsPage,
-          meta: { title: "Products" },
+          meta: { title: "Services" },
           component: () => import("./pages/ProductsPage.vue"),
+        },
+        {
+          path: "blog",
+          name: RouteName.BlogPage,
+          meta: { title: "Blog" },
+          component: () => import("./pages/BlogPage.vue"),
         },
       ],
     },

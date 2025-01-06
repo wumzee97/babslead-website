@@ -28,10 +28,9 @@ onUnmounted(() => {
 <template>
   <div class="relative w-full flex justify-center mb-32">
     <nav
-      class="container  max-w-7xl mx-auto flex justify-between items-center z-50 px-5 2xl:px-0 top-0 fixed transition-all duration-300"
+      class="container max-w-7xl mx-auto flex justify-between items-center z-50 px-5 2xl:px-0 top-0 fixed transition-all duration-300"
       :class="[
         isScrolled ? 'bg-white shadow-lg py-2 !px-6' : 'py-0 bg-transparent',
-       
       ]"
     >
       <div>
@@ -39,7 +38,10 @@ onUnmounted(() => {
           <img
             src="@/assets/images/logo.png"
             class="lg:h-[138px] h-[98px] transition-all duration-300"
-            :class="[isScrolled ? 'lg:h-[100px] h-[70px]' : '', route.name ===RouteName.LandingPage ? 'inline-block' : '']"
+            :class="[
+              isScrolled ? 'lg:h-[100px] h-[70px]' : '',
+              route.name === RouteName.LandingPage ? 'inline-block' : '',
+            ]"
             alt=""
           />
           <!-- <img
@@ -50,21 +52,30 @@ onUnmounted(() => {
           /> -->
         </RouterLink>
       </div>
-      <div class="hidden lg:flex gap-12" :class="isScrolled ? '!text-black' : ''">
+      <div
+        class="hidden lg:flex gap-12"
+        :class="isScrolled ? '!text-black' : ''"
+      >
         <RouterLink
           class="text-xl hover:text-[#FAD536] transition-colors"
-          to="/"  :class="[
+          to="/"
+          :class="[
             'text-xl transition-colors ',
-            route.name === RouteName.LandingPage ? 'text-[#FAD536] font-semibold' : '',
+            route.name === RouteName.LandingPage
+              ? 'text-[#FAD536] font-semibold'
+              : '',
+            route.name === RouteName.AboutPage ? 'text-white' : '',
             'hover:text-[#FAD536]',
           ]"
-          >Home </RouterLink
-        >
+          >Home
+        </RouterLink>
         <RouterLink
           class="text-xl hover:text-[#FAD536] transition-colors"
           :class="[
             'text-xl transition-colors ',
-            route.name === RouteName.AboutPage ? 'text-[#FAD536]  font-semibold' : '',
+            route.name === RouteName.AboutPage
+              ? 'text-[#FAD536]  font-semibold'
+              : '',
             'hover:text-[#FAD536]',
           ]"
           :to="{ name: RouteName.AboutPage }"
@@ -74,18 +85,29 @@ onUnmounted(() => {
           class="text-xl hover:text-[#FAD536] transition-colors"
           :class="[
             'text-xl transition-colors',
-            route.name === RouteName.ProductsPage ? 'text-[#FAD536]  font-semibold' : '',
+            route.name === RouteName.ProductsPage
+              ? 'text-[#FAD536]  font-semibold'
+              : '',
+            route.name === RouteName.AboutPage ? 'text-white' : '',
             'hover:text-[#FAD536]',
           ]"
           :to="{ name: RouteName.ProductsPage }"
           >Services</RouterLink
         >
-      
+
         <RouterLink
           class="text-xl hover:text-[#FAD536] transition-colors"
           to="/#faq"
-          >Blog </RouterLink
-        >
+          :class="[
+            'text-xl transition-colors',
+            route.name === RouteName.BlogPage
+              ? 'text-[#FAD536]  font-semibold'
+              : '',
+            route.name === RouteName.AboutPage ? 'text-white' : '',
+            'hover:text-[#FAD536]',
+          ]"
+          >Blog
+        </RouterLink>
       </div>
       <div>
         <AppSubmitButton

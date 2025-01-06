@@ -132,10 +132,10 @@ const features: IFeatures[] = [
               <span>X/LinkedIn Post</span>
             </div>
             <div class="flex gap-3">
-              <div class="rounded-lg bg-[#000] flex items-center px-12">
+              <div class="rounded-lg bg-[#000] flex items-center px-3 lg:px-12">
                 <IconTwitter height="36px" width="36px" />
               </div>
-              <div class="rounded-lg bg-[#105be8] flex items-center px-12">
+              <div class="rounded-lg bg-[#105be8] flex items-center px-3 lg:px-12">
                 <IconLinkedin height="36px" width="36px" />
               </div>
             </div>

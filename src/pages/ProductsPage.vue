@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import  AppSubmitButton from "@/components/AppSubmitButton.vue";
 import IconCheckCircle from "@/components/icons/IconCheckCircle.vue";
-import LinkedInGM from '@/assets/images/linkedInGM.png'
+import LinkednGM from '@/assets/images/linkedinGM.png'
 import XGO from '@/assets/images/xgo.png'
 import XGM from '@/assets/images/XGM.png'
 import LinkedInGO from '@/assets/images/linkedInGO.png'

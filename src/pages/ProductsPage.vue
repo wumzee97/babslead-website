@@ -4,7 +4,7 @@ import IconCheckCircle from "@/components/icons/IconCheckCircle.vue";
 import LinkedInGM from '@/assets/images/linkedinGM.png'
 import XGO from '@/assets/images/xgo.png'
 import XGM from '@/assets/images/XGM.png'
-import LinkedInGO from '@/assets/images/linkedInGO.png'
+import LinkedInGO from '@/assets/images/linkedinGO.png'
 import WebsiteCopywriting from '@/assets/images/website.copywriting.png'
 import SeoCopywriting from '@/assets/images/seo.copywriting.png'
 import LogoDesign from '@/assets/images/logo.design.png'

@@ -5,6 +5,8 @@ import BrandingImgRef from "@/assets/images/branding.png";
 import DesignsImgRef from "@/assets/images/designs.png";
 import ProfileManagementImgRef from '@/assets/images/profile-management.png'
 import ProfileOptimizationImgRef from '@/assets/images/profile-optimization.png'
+import SalesOutreachImgRef from '@/assets/images/sale.outreach.png'
+import { RouteName } from "@/utils/enums";
 
 const packages = [
   {
@@ -26,6 +28,10 @@ const packages = [
   {
     title: "Profile Optimization",
     image: ProfileOptimizationImgRef,
+  },
+  {
+    title: "Sales Outreach",
+    image: SalesOutreachImgRef,
   },
 ];
 </script>
@@ -58,7 +64,7 @@ const packages = [
           :key="pkg.title"
         >
           <img :src="pkg.image" alt="">
-          <p class="text-white bg-munsell p-3 text-left text-lg  lg:text-2xl font-semibold flex justify-between items-center">{{ pkg.title }} <span class="text-base">View Pricing</span></p>
+          <RouterLink :to="{name: RouteName.ProductsPage}" class="text-white bg-munsell p-3 text-left text-lg  lg:text-2xl font-semibold flex justify-between items-center">{{ pkg.title }} <span class="text-base">View Details</span></RouterLink>
 
           <!-- <AppSubmitButton type="button" class="mt-8">
             View Pricing</AppSubmitButton

@@ -17,7 +17,7 @@ const testimonials = [
     id: 1,
     name: "Brian Montes",
     image: BrianMonteImg,
-    designation: '',
+    designation: 'CEO @ Raddllc',
     rating: 5,
     comment:
       "Babatunde is a skilled ghostwriter. He delivers on time and communicates very well. He takes the time to understand the project scope and delivered the best work possible.",
@@ -27,20 +27,20 @@ const testimonials = [
     id: 2,
     name: "Ulrich Van",
     image: UlrichImg,
-    designation: '',
+    designation: 'Product Manager @ FNB South Africa',
     rating: 5,
     comment: "Great Copywriter, very professional and very engaging.",
-    date: "12th December 2024",
+    date: "March 2024",
   },
   {
     id: 3,
     name: "Nico Garcia",
     image: NicoGarciaImg,
-    designation: '',
+    designation: 'CEO @ Reputation.com',
     rating: 4.5,
     comment:
       "Probably one of the most talented and committed writers on this platform. Highly recommended.",
-    date: "12th December 2024",
+    date: "February 2024",
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ const testimonials = [
     rating: 4.5,
     comment:
       "Babatunde has been of a great availability and understanding. He perfectly filled the job I hired him for, and provided me great, targeted and useful datas. He didn't managed his efforts, even when facing some difficulties with some specific datas, to accomplish the mission. I warmly recommend him.",
-    date: "12th December 2024",
+    date: "July 2022",
   },
 
   {
@@ -61,7 +61,7 @@ const testimonials = [
     rating: 4.5,
     comment:
       "I want to appreciate BabsLead for his coaching style, which was supportive, encouraging, positive and tailored to my specific needs. He take his time to understand my goals and objectives, and provided actionable advice and feedback that helped me improve my LinkedIn presence, my CV and upwork profile. I highly recommend Babatunde to anyone looking to enhance their professional online presence!",
-    date: "12th December 2024",
+    date: "November 2024",
   },
   {
     id: 6,
@@ -71,7 +71,7 @@ const testimonials = [
     rating: 4.5,
     comment:
       "I've been working with Babatunde for couple of weeks back and I must say that I'm really impressed with a number of things. First of all, his approach to work, his professionalism, his patience, I mean he always delivers. So on top of that, he is really gifted with storytelling and he masters the art of the pen, so working with him has been nothing but a blessing personally and I think that everyone deserves to have someone like Babatunde around them and I really look forward to further collaboration with Baba.",
-    date: "12th December 2024",
+    date: "July 2023",
   },
   {
     id: 7,
@@ -81,7 +81,7 @@ const testimonials = [
     rating: 4.5,
     comment:
       "I'm not really a big fan of making testimonials but I had to make one for James and helping me with the right strategies, correct the errors I was making in building my own personal brand on Twitter. He connects me with the right frameworks and sent me on the path to understand the nature of branding in the Twitter space. So, I really just want to sit down and say thank you and for anybody who's trying to connect with James, I highly recommend it. He will set you on the right path and give you the right frameworks to grow your business. So thank you.",
-    date: "12th December 2024",
+    date: "May 2023",
   },
 
 ];

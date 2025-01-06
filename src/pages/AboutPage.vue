@@ -5,6 +5,14 @@ import BathlomewImg from "@/assets/images/bathlomew.jpeg";
 import BeautyImg from "@/assets/images/beauty.jpeg";
 import DavidImg from "@/assets/images/david.jpeg";
 import MercyImg from "@/assets/images/mercy.jpeg";
+import ContentCreationImgRef from "@/assets/images/content-creation.png";
+import BrandingImgRef from "@/assets/images/branding.png";
+import DesignsImgRef from "@/assets/images/designs.png";
+import ProfileManagementImgRef from "@/assets/images/profile-management.png";
+import ProfileOptimizationImgRef from "@/assets/images/profile-optimization.png";
+import IconLinkedin from "@/components/icons/IconLinkedin.vue";
+import SalesOutreachImgRef from "@/assets/images/sale.outreach.png";
+
 const packages = [
   {
     title: "Branding",
@@ -28,16 +36,18 @@ const packages = [
     title: "Sales Outreach",
     description:
       "We support your brand via personalized sales outreach to 3x your revenue. ",
-    image: ProfileManagementImgRef,
+    image: SalesOutreachImgRef,
   },
   {
     title: "Profile Management",
     description:
-      "We support your brand via personalized sales outreach to 3x your revenue. ",
+      "We help you save 20-30 hours weekly managing your social media account.",
     image: ProfileManagementImgRef,
   },
   {
     title: "Profile Optimization",
+    description:
+      "We help you optimize your profile for maximum visibility and reach.",
     image: ProfileOptimizationImgRef,
   },
 ];
@@ -80,13 +90,6 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/mercy-jolly-32804528b",
   },
 ];
-
-import ContentCreationImgRef from "@/assets/images/content-creation.png";
-import BrandingImgRef from "@/assets/images/branding.png";
-import DesignsImgRef from "@/assets/images/designs.png";
-import ProfileManagementImgRef from "@/assets/images/profile-management.png";
-import ProfileOptimizationImgRef from "@/assets/images/profile-optimization.png";
-import IconLinkedin from "@/components/icons/IconLinkedin.vue";
 </script>
 <template>
   <div class="relative -mt-[190px] pt-44">
@@ -104,7 +107,11 @@ import IconLinkedin from "@/components/icons/IconLinkedin.vue";
       <main class="relative pt-12 pb-16 px-6">
         <div class="max-w-7xl mx-auto text-center my-24">
           <h1 class="text-4xl lg:text-5xl font-bold text-white mb-4">
-            About Us
+            <span
+              class="from-white via-bright-orange to-white bg-gradient-to-r bg-clip-text text-transparent"
+            >
+              About Us</span
+            >
           </h1>
           <p class="text-lg lg:text-xl text-gray-300 mb-12">
             Transforming Personal Brands into a Traffic Machine
@@ -116,27 +123,27 @@ import IconLinkedin from "@/components/icons/IconLinkedin.vue";
 
   <div class="bg-dark/95 lg:py-24 py-12 px-5 md:px-16 2xl:px-0">
     <div class="container max-w-7xl mx-auto text-white">
-      <p class="text-xl lg:text-3xl">
+      <p class="text-lg lg:text-2xl">
         BabsLead is a marketing agency specialized in helping CEOs and Founders
         scale their personal brands via ghostwriting, branding and lead
         generation.
       </p>
 
-      <p class="text-2xl lg:text-4xl mt-8">
+      <p class="text-lg lg:text-2xl mt-8">
         With our expertise in social media management, community building, and
-        sales outreach, we have helped 20+ business owners transform their
-        brands, surpassing 5M impressions and over 1000 leads generated.
+        sales outreach, we have helped 30+ business owners transform their
+        brands, surpassing 10M impressions and over 1000 leads generated.
       </p>
     </div>
   </div>
 
   <div class="bg-dark text-white lg:py-24 py-12 px-5 md:px-16 2xl:px-0">
     <div class="container max-w-7xl mx-auto">
-      <p class="text-xl lg:text-3xl">
+      <p class="text-lg lg:text-2xl">
         Our services span across content creation, branding, designs, profile
         optimization and sales outreach.
       </p>
-      <div class="lg:grid gap-6  grid-cols-2 mt-12">
+      <div class="lg:grid gap-6 grid-cols-2 mt-12">
         <div
           class="flex rounded-md border border-gray-50/20 items-center gap-4 mb-6 lg:mb-0"
           v-for="pkg in packages"
@@ -160,7 +167,7 @@ import IconLinkedin from "@/components/icons/IconLinkedin.vue";
         Meet the team members
       </p>
 
-      <div class="lg:grid grid-cols-12 gap-6">
+      <div class="lg:grid grid-cols-12 gap-16">
         <div
           class="col-span-4 mb-6 lg:mb-0"
           v-for="member in teamMembers"

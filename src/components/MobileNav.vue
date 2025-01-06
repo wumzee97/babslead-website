@@ -19,7 +19,7 @@ const menuItems = [
 </script>
 
 <template>
-  <div class="relative overflow-hidden">
+  <div class="relative overflow-hidden ">
     <!-- Hamburger Button -->
     <button 
       @click="toggleMenu"

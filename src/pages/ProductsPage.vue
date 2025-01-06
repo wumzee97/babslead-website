@@ -1,15 +1,15 @@
 <script lang="ts" setup>
-import  AppSubmitButton from "@/components/AppSubmitButton.vue";
+import AppSubmitButton from "@/components/AppSubmitButton.vue";
 import IconCheckCircle from "@/components/icons/IconCheckCircle.vue";
-import LinkedInGM from '@/assets/images/linkedinGM.png'
-import XGO from '@/assets/images/xgo.png'
-import XGM from '@/assets/images/XGM.png'
-import LinkedInGO from '@/assets/images/linkedinGO.png'
-import WebsiteCopywriting from '@/assets/images/website.copywriting.png'
-import SeoCopywriting from '@/assets/images/seo.copywriting.png'
-import LogoDesign from '@/assets/images/logo.design.png'
-import LinkedXCoaching from '@/assets/images/linkedinxcoaching.png'
-import UpworkCoaching from '@/assets/images/upwork.coaching.png'
+import LinkedInGM from "@/assets/images/linkedinGM.png";
+import XGO from "@/assets/images/xgo.png";
+import XGM from "@/assets/images/XGM.png";
+import LinkedInGO from "@/assets/images/linkedinGO.png";
+import WebsiteCopywriting from "@/assets/images/website.copywriting.png";
+import SeoCopywriting from "@/assets/images/seo.copywriting.png";
+import LogoDesign from "@/assets/images/logo.design.png";
+import LinkedXCoaching from "@/assets/images/linkedinxcoaching.png";
+import UpworkCoaching from "@/assets/images/upwork.coaching.png";
 
 const services = [
   {
@@ -73,7 +73,7 @@ const services = [
     ],
   },
   {
-    name: "Website copywriting",
+    name: "Website Copywriting",
     image: WebsiteCopywriting,
     offers: [
       "Research",
@@ -85,7 +85,7 @@ const services = [
     ],
   },
   {
-    name: "SEO copywriting",
+    name: "SEO Copywriting",
     image: SeoCopywriting,
     offers: [
       "Strategy call",
@@ -111,7 +111,7 @@ const services = [
     ],
   },
   {
-    name: "LinkedIn/X coaching ",
+    name: "LinkedIn/X Coaching ",
     image: LinkedXCoaching,
     offers: [
       "2 sessions",
@@ -145,12 +145,13 @@ const services = [
 
     <!-- Content -->
     <div class="relative">
-      
-
       <main class="relative pt-12 pb-16 px-6">
         <div class="max-w-7xl mx-auto text-center my-24">
           <h1 class="text-4xl lg:text-5xl font-bold text-white mb-4">
-            Our Products
+            <span
+              class="from-white via-bright-orange to-white bg-gradient-to-r bg-clip-text text-transparent"
+              >Our Services</span
+            >
           </h1>
           <p class="text-lg lg:text-xl text-gray-300 mb-12">
             Transforming Personal Brands into a Traffic Machine
@@ -162,19 +163,16 @@ const services = [
 
   <div class="bg-dark lg:py-24 py-12 px-5 md:px-16 2xl:px-0">
     <div class="container max-w-7xl mx-auto">
-      <p class="text-white text-3xl lg:text-5xl font-semibold leading-[1.2em]">
-        All Of The Products We Provide Are
-        <span class="text-success-500">Digital </span>. But What Is A
-        <span class="text-success-500">Digital Product?</span>
+      <p class="text-white text-3xl lg:text-5xl font-semibold leading-[1.5rem]">
+        All the services we provide are
+        <span class="text-[#FAD536]">remote</span>. But what
+        <span class="text-[#FAD536]"> separates us</span> from the rest?
       </p>
       <p class="text-white leading-[1.5rem] mt-6">
-        A <span class="text-success-500">digital product</span> is a product
-        that is delivered via computer or the internet rather than through a
-        physical delivery method. You can access the product online with ease.
-        This could be anything from a template to a PDF document, audio file,
-        eBook, training course, software or any other digital files that are
-        delivered digitally rather than physically. Digital products are also
-        usually a lot cheaper than physical products.
+        Our services are tailored to help you stand out from the crowd and
+        convert your target audience through personalized solutions we bring to
+        your brand. If you have ever wanted yoir brand to shine online, we are
+        your best solution.
       </p>
     </div>
   </div>
@@ -185,13 +183,9 @@ const services = [
         <div
           v-for="service in services"
           :key="service.name"
-          class="border border-gray-50/30 rounded-md p-6 flex  flex-col items-center mb-6 lg:mb-0"
+          class="border border-gray-50/30 rounded-md p-6 flex flex-col items-center mb-6 lg:mb-0"
         >
-          <img
-            :src="service.image"
-            class="h-44 w-44 rounded-full"
-            alt=""
-          />
+          <img :src="service.image" class="h-44 w-44 rounded-full" alt="" />
 
           <p class="text-white font-semibold text-2xl mt-3 text-center">
             {{ service.name }}
@@ -208,7 +202,13 @@ const services = [
             </span>
           </span>
 
-          <AppSubmitButton class="mt-5 !bg-[#FAD536] !text-dark-brown lg:!w-auto">Schedule a Meeting</AppSubmitButton>
+          <AppSubmitButton
+            as="RouterLink"
+            href="https://calendly.com/babslead/bookme"
+            target="_blank"
+            class="mt-5 !bg-[#FAD536] !text-dark-brown lg:!w-auto"
+            >Schedule a Meeting</AppSubmitButton
+          >
         </div>
       </div>
     </div>

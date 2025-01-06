@@ -43,7 +43,7 @@ const packages = [
 
     <!-- Content -->
     <div class="relative">
-      <div class="container max-w-7xl mx-auto px-5 md:px-16 2xl:px-0 pb-16">
+      <div data-aos="fade-up" data-aos-duration="2000" class="container max-w-7xl mx-auto px-5 md:px-16 2xl:px-0 pb-16">
       <p class="font-semibold text-4xl lg:text-5xl text-white text-center">
         Which Package Do We Offer?
       </p>

@@ -3,12 +3,12 @@
 <template>
   <div class=" py-12 lg:py-24 bg-munsell/5">
     <div class="container max-w-7xl mx-auto px-5 md:px-16 2xl:px-0 pb-16">
-      <p class="font-semibold text-3xl lg:text-5xl text-dark-brown text-center">
+      <p data-aos="fade-up" data-aos-duration="1000" class="font-semibold text-3xl lg:text-5xl text-dark-brown text-center">
         Meet Our Founder
       </p>
 
       <div class="lg:grid flex flex-col-reverse gap-8 lg:gap-16 items-center  grid-cols-12 mt-16">
-        <div class="col-span-8 text-dark-brown">
+        <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" class="col-span-8 text-dark-brown">
           <p class="text-xl lg:text-3xl font-semibold">
             Hi there! My name is Babatunde James
           </p>
@@ -29,7 +29,7 @@
             generated.
           </p>
         </div>
-        <div class="col-span-4 rounded-lg border border-dark-brown ">
+        <div class="col-span-4 rounded-lg border border-dark-brown " data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
           <img src="@/assets/images/tunde2.jpg" class="rounded-lg h-[350px] w-full object-cover object-to" alt="">
         </div>
       </div>

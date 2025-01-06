@@ -39,8 +39,8 @@ const features: IFeatures[] = [
   <div class="bg-dark py-24">
     <div class="container max-w-7xl mx-auto px-5 md:px-16 2xl:px-0 pb-16">
       <div class="lg:grid grid-cols-12 gap-10">
-        <div class="col-span-5 mb-8 lg:mt-0">
-          <p class="text-xl lg:text-2xl font-semibold text-success-500">ABOUT</p>
+        <div class="col-span-5 mb-8 lg:mt-0" data-aos="fade-right" data-aos-duration="2000">
+          <p class="text-xl lg:text-2xl font-semibold text-success-500" >ABOUT</p>
           <p class="font-bold text-3xl lg:text-4xl text-white">BabsLead</p>
           <div class="text-white mt-9">
             <p>
@@ -66,7 +66,7 @@ const features: IFeatures[] = [
             >
           </div>
         </div>
-        <div class="col-span-7 lg:grid grid-cols-2 gap-6">
+        <div class="col-span-7 lg:grid grid-cols-2 gap-6" data-aos="fade-down-left" data-aos-duration="2500">
           <div
             class="border border-white rounded-xl p-3 lg:p-6 hover:bg-success-500 mb-4 lg:mb-0"
             v-for="feature in features"

@@ -1,8 +1,8 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="py-12 lg:py-24">
-    <p class="text-center text-primary-500 text-3xl font-medium mb-6">
+  <div class="py-12 lg:py-24 ">
+    <p class="text-center  text-3xl font-medium mb-6">
       WORKED WITH INDIVIDUALS FROM
     </p>
     <marquee behavior="alternate" direction="left">

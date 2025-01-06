@@ -31,12 +31,23 @@ const packages = [
 </script>
 
 <template>
-  <div class="py-24 bg-light-yellow" id="packages">
-    <div class="container max-w-7xl mx-auto px-5 md:px-16 2xl:px-0 pb-16">
-      <p class="font-semibold text-4xl lg:text-5xl text-dark-brown text-center">
+  
+
+  <div class="relative py-24">
+    <!-- Background Image with Overlay -->
+    <div
+      class="absolute inset-0 bg-cover bg-no-repeat bg-center bg-[url('/src/assets/images/design.png')]"
+    >
+      <div class="absolute inset-0 bg-dark bg-opacity-[90%]"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative">
+      <div class="container max-w-7xl mx-auto px-5 md:px-16 2xl:px-0 pb-16">
+      <p class="font-semibold text-4xl lg:text-5xl text-white text-center">
         Which Package Do We Offer?
       </p>
-      <p class="text-center mt-3">
+      <p class="text-center mt-3 text-white">
         We offer a variety of packages including...
       </p>
 
@@ -54,6 +65,7 @@ const packages = [
           > -->
         </div>
       </div>
+    </div>
     </div>
   </div>
 </template>

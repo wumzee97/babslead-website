@@ -145,7 +145,7 @@ const services = [
 
     <!-- Content -->
     <div class="relative">
-      <Navbar />
+      
 
       <main class="relative pt-12 pb-16 px-6">
         <div class="max-w-7xl mx-auto text-center my-24">

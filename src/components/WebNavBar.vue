@@ -28,12 +28,10 @@ onUnmounted(() => {
 <template>
   <div class="relative w-full flex justify-center mb-32">
     <nav
-      class="container max-w-7xl mx-auto flex justify-between items-center z-50 px-5 2xl:px-0 top-0 fixed transition-all duration-300"
+      class="container  max-w-7xl mx-auto flex justify-between items-center z-50 px-5 2xl:px-0 top-0 fixed transition-all duration-300"
       :class="[
         isScrolled ? 'bg-white shadow-lg py-2 !px-6' : 'py-0 bg-transparent',
-        (route.name === RouteName.AboutPage || route.name === RouteName.ProductsPage) && !isScrolled
-          ? 'text-[#FFFBEB]'
-          : 'text-inherit',
+       
       ]"
     >
       <div>
@@ -52,11 +50,11 @@ onUnmounted(() => {
           /> -->
         </RouterLink>
       </div>
-      <div class="hidden lg:flex gap-12">
+      <div class="hidden lg:flex gap-12" :class="isScrolled ? '!text-black' : ''">
         <RouterLink
           class="text-xl hover:text-[#FAD536] transition-colors"
           :class="[
-            'text-xl transition-colors',
+            'text-xl transition-colors ',
             route.name === RouteName.AboutPage ? 'text-[#FAD536]' : '',
             'hover:text-[#FAD536]',
           ]"

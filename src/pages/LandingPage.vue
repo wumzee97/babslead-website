@@ -11,12 +11,15 @@ import AboutSection from "@/components/AboutSection.vue";
 import FeaturesSection from "@/components/FeaturesSection.vue";
 import MeetFounderSection from "@/components/MeetFounderSection.vue";
 import ContactUsSection from "../components/ContactUsSection.vue";
+import  LandingPageHero from "@/components/LandingPageHero.vue";
 </script>
 
 <template>
   <div>
     <div class="hero-bg bg-no-repeat -mt-[190px] pt-32 lg:pt-32">
       <LandingPageHeroSection />
+
+      <!-- <LandingPageHero /> -->
     </div>
     <ReferencePartners />
 

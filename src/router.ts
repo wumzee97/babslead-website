@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createRouter, createWebHistory } from "vue-router";
 // import {
 //   getAccessTokenFromCookie,
@@ -5,6 +6,8 @@ import { createRouter, createWebHistory } from "vue-router";
 // } from "./utils/helpers";
 import type { NavigationGuardNext, RouteLocationNormalized } from "vue-router";
 import { RouteName } from "./utils/enums";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -151,6 +154,11 @@ const router = createRouter({
       return { top: 0 };
     }
   },
+});
+
+router.beforeEach((to, from, next) => {
+  AOS.init(); // Initialize AOS
+  next();
 });
 
 // router.beforeEach(

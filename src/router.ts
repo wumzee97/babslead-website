@@ -39,7 +39,7 @@ const router = createRouter({
           path: "blog",
           name: RouteName.BlogPage,
           meta: { title: "Blog" },
-          component: () => import("./pages/BlogPage.vue"),
+          component: () => import("./pages/BlogPage"),
         },
       ],
     },

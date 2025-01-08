@@ -46,7 +46,7 @@ import  IconTwitter from "./icons/IconTwitter.vue";
         <div class="col-span-4">
           <div
             class="rounded-lg border border-dark-brown"
-            data-aos="fade-left"
+            data-aos="fade-left-down"
             data-aos-delay="1000"
             data-aos-duration="1000"
           >

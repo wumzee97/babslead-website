@@ -129,7 +129,7 @@ onUnmounted(() => {
           >Contact Us</AppSubmitButton
         >
 
-        <MobileNav class="lg:hidden" />
+        <MobileNav :is-scrolled="isScrolled" class="lg:hidden" />
       </div>
     </nav>
   </div>

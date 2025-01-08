@@ -24,16 +24,10 @@ function getImageUrl(name: string) {
         >
         <br />
         <span class="text-4xl lg:text-6xl mt-6">
-          <span
-            class="from-dark-brown via-bright-orange to-dark-brown bg-gradient-to-r bg-clip-text text-transparent"
-            >Personal Brand</span
-          >
+          Personal Brand
           into a
-          <span
-            class="from-dark-brown via-bright-orange to-dark-brown bg-gradient-to-r bg-clip-text text-transparent"
-          >
-            Traffic Machine</span
-          >
+         
+            Traffic Machine
         </span>
       </h1>
       <p class="text-primary-500 text-center text-xl font-medium mt-6">

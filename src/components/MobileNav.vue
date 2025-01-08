@@ -8,6 +8,10 @@ import { RouteName } from "@/utils/enums";
 const isOpen = ref(false);
 const route = useRoute();
 
+const props = defineProps<{
+  isScrolled: boolean;
+}>();
+
 const toggleMenu = () => {
   isOpen.value = !isOpen.value;
 };
@@ -34,7 +38,8 @@ const menuItems = [
           :class="{
             'rotate-45 translate-y-2 bg-black': isOpen,
             'bg-white': route.name !== RouteName.LandingPage,
-            '!bg-black': route.name !== RouteName.LandingPage && isOpen,
+            '!bg-black': (route.name !== RouteName.LandingPage && isOpen) || props.isScrolled,
+            
           }"
         ></span>
         <span
@@ -42,7 +47,7 @@ const menuItems = [
           :class="{
             'opacity-0': isOpen,
             'bg-white': route.name !== RouteName.LandingPage,
-            '!bg-black': route.name !== RouteName.LandingPage && isOpen,
+            '!bg-black': (route.name !== RouteName.LandingPage && isOpen) || props.isScrolled,
           }"
         ></span>
         <span
@@ -50,7 +55,7 @@ const menuItems = [
           :class="{
             '-rotate-45 -translate-y-2 bg-black': isOpen,
             'bg-white': route.name !== RouteName.LandingPage,
-            '!bg-black': route.name !== RouteName.LandingPage && isOpen,
+            '!bg-black': (route.name !== RouteName.LandingPage && isOpen) || props.isScrolled,
           }"
         ></span>
       </div>
@@ -81,7 +86,11 @@ const menuItems = [
           </nav>
 
           <div>
-            <AppSubmitButton as="RouterLink" to="/#contact" @click="isOpen = false" class="!w-auto"
+            <AppSubmitButton
+              as="RouterLink"
+              to="/#contact"
+              @click="isOpen = false"
+              class="!w-auto"
               >Contact Us</AppSubmitButton
             >
           </div>

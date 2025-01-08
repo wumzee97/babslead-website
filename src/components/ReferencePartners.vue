@@ -33,7 +33,7 @@ onMounted(() => {
 
 <template>
   <div class="py-12 lg:py-24">
-    <p class="text-center text-3xl font-medium mb-6">
+    <p class="text-center text-xl lg:text-3xl font-medium mb-6">
       WORKED WITH INDIVIDUALS FROM
     </p>
 

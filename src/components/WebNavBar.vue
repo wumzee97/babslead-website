@@ -52,7 +52,7 @@ onUnmounted(() => {
             src="@/assets/images/logo-white.png"
             class="p-8 h-28 pl-0 transition-all duration-300"
             :class="[
-              isScrolled ? 'lg:h-[100px] h-[70px] hidden lg:inline-block' : '',
+              isScrolled ? 'lg:h-[100px] h-[70px] hidden ' : '',
               route.name === RouteName.AboutPage ||
               route.name === RouteName.ProductsPage
                 ? 'inline-block'

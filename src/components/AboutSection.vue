@@ -81,7 +81,7 @@ const features: IFeatures[] = [
           data-aos-duration="2500"
         >
           <div
-            class="border border-white rounded-xl p-3 lg:p-6 hover:bg-success-500 mb-4 lg:mb-0"
+            class="border border-white rounded-xl p-3 lg:p-6 hover:bg-munsell mb-4 lg:mb-0"
             v-for="feature in features"
             :key="feature.id"
           >

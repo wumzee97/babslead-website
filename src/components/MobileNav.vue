@@ -13,11 +13,10 @@ const toggleMenu = () => {
 };
 
 const menuItems = [
-  { title: "About", path: "/about" },
-  { title: "Products", path: "/products" },
-  { title: "Packages", path: "/packages" },
+  { title: "Home", path: "/" },
+  { title: "About Us", path: "/about" },
   { title: "Services", path: "/services" },
-  { title: "Contact Us", path: "/#contact" },
+  { title: "Blog", path: "/blog" },
 ];
 </script>
 
@@ -35,7 +34,7 @@ const menuItems = [
           :class="{
             'rotate-45 translate-y-2 bg-black': isOpen,
             'bg-white': route.name !== RouteName.LandingPage,
-            '!bg-black': (route.name !== RouteName.LandingPage && isOpen)
+            '!bg-black': route.name !== RouteName.LandingPage && isOpen,
           }"
         ></span>
         <span
@@ -43,7 +42,7 @@ const menuItems = [
           :class="{
             'opacity-0': isOpen,
             'bg-white': route.name !== RouteName.LandingPage,
-            '!bg-black': (route.name !== RouteName.LandingPage && isOpen)
+            '!bg-black': route.name !== RouteName.LandingPage && isOpen,
           }"
         ></span>
         <span
@@ -51,7 +50,7 @@ const menuItems = [
           :class="{
             '-rotate-45 -translate-y-2 bg-black': isOpen,
             'bg-white': route.name !== RouteName.LandingPage,
-            '!bg-black': (route.name !== RouteName.LandingPage && isOpen)
+            '!bg-black': route.name !== RouteName.LandingPage && isOpen,
           }"
         ></span>
       </div>
@@ -82,8 +81,8 @@ const menuItems = [
           </nav>
 
           <div>
-            <AppSubmitButton @click="isOpen = false" class="!w-auto"
-              >Get Started</AppSubmitButton
+            <AppSubmitButton as="RouterLink" to="/#contact" @click="isOpen = false" class="!w-auto"
+              >Contact Us</AppSubmitButton
             >
           </div>
         </div>

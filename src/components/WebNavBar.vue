@@ -72,10 +72,10 @@ onUnmounted(() => {
           :class="[
             'text-xl transition-colors ',
             route.name === RouteName.LandingPage
-              ? 'text-[#FAD536] font-semibold'
+              ? '!text-[#FAD536] font-semibold'
               : '',
-            route.name === RouteName.AboutPage ? 'text-white' : '',
-            'hover:text-[#FAD536]',
+            route.name !== RouteName.LandingPage ? 'text-white' : '',
+            'hover:text-[#FAD536]', isScrolled ? 'text-black' : ''
           ]"
           >Home
         </RouterLink>
@@ -84,9 +84,10 @@ onUnmounted(() => {
           :class="[
             'text-xl transition-colors ',
             route.name === RouteName.AboutPage
-              ? 'text-[#FAD536]  font-semibold'
+              ? '!text-[#FAD536]  font-semibold'
               : '',
-            'hover:text-[#FAD536]',
+            'hover:text-[#FAD536]', isScrolled ? 'text-black' : '',
+            route.name !== RouteName.LandingPage ? 'text-white' : '',
           ]"
           :to="{ name: RouteName.AboutPage }"
           >About Us</RouterLink
@@ -96,10 +97,10 @@ onUnmounted(() => {
           :class="[
             'text-xl transition-colors',
             route.name === RouteName.ProductsPage
-              ? 'text-[#FAD536]  font-semibold'
+              ? '!text-[#FAD536]  font-semibold'
               : '',
             route.name === RouteName.AboutPage ? 'text-white' : '',
-            'hover:text-[#FAD536]',
+            'hover:text-[#FAD536]',isScrolled ? 'text-black' : ''
           ]"
           :to="{ name: RouteName.ProductsPage }"
           >Services</RouterLink
@@ -114,7 +115,8 @@ onUnmounted(() => {
               ? 'text-[#FAD536]  font-semibold'
               : '',
             route.name === RouteName.AboutPage ? 'text-white' : '',
-            'hover:text-[#FAD536]',
+            'hover:text-[#FAD536]',isScrolled ? 'text-black' : '',
+            route.name !== RouteName.LandingPage ? 'text-white' : '',
           ]"
           >Blog
         </RouterLink>

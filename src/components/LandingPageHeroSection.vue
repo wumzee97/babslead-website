@@ -14,12 +14,12 @@ function getImageUrl(name: string) {
     <div
       data-aos="fade-up"
       data-aos-duration="2000"
-      class="flex flex-col items-center justify-center mt- min-h-[650px]"
+      class="flex flex-col items-center justify-center lg:min-h-[650px] py-12 lg:py-0"
     >
       <h1
         class="text-3xl lg:text-5xl text-primary-500 text-center font-semibold lg:!leading-[80px] leading-[40px]"
       >
-        <span class="font-normal mb-7 text-primary-500">
+        <span class="font-normal mb-7 text-xl lg:text-5xl text-primary-500">
           Transforming your</span
         >
         <br />
@@ -30,12 +30,12 @@ function getImageUrl(name: string) {
             Traffic Machine
         </span>
       </h1>
-      <p class="text-primary-500 text-center text-xl font-medium mt-6">
+      <p class="text-primary-500 text-center lg:text-xl font-medium mt-6">
         We help you stand out with sociable content and convert your target
         audience.
       </p>
 
-      <div class="flex flex-col lg:flex-row gap-6 mt-16">
+      <div class="flex flex-col lg:flex-row gap-6 mt-8 lg:mt-16">
         <a href="https://calendly.com/babslead/bookme" target="_blank">
           <AppSubmitButton class="!w-auto px-10"
             >Book a Discovery Call</AppSubmitButton

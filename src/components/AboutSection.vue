@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import  { RouteName } from "@/utils/enums";
 import AppSubmitButton from "./AppSubmitButton.vue";
 import IconLinkedin from "./icons/IconLinkedin.vue";
 import  IconTwitter from "./icons/IconTwitter.vue";
@@ -68,7 +69,7 @@ const features: IFeatures[] = [
               profile optimization and sales outreach.
             </p>
 
-            <AppSubmitButton
+            <AppSubmitButton as="RouterLink" :to="{name: RouteName.ProductsPage}"
               type="button"
               class="!bg-[#FAD536] !text-dark-brown mt-10"
               >View Our Packages</AppSubmitButton

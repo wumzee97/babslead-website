@@ -163,7 +163,7 @@ const services = [
 
   <div class="bg-dark lg:py-24 py-12 px-5 md:px-16 2xl:px-0">
     <div class="container max-w-7xl mx-auto">
-      <p class="text-white text-3xl lg:text-5xl font-semibold leading-[1.5rem]">
+      <p class="text-white text-3xl lg:text-5xl font-semibold ">
         All the services we provide are
         <span class="text-[#FAD536]">remote</span>. But what
         <span class="text-[#FAD536]"> separates us</span> from the rest?

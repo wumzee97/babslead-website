@@ -40,16 +40,16 @@ onUnmounted(() => {
             class="lg:h-[138px] h-[98px] transition-all duration-300"
             :class="[
               isScrolled ? 'lg:h-[100px] h-[70px]' : '',
-              route.name === RouteName.LandingPage ? 'inline-block' : '',
+              route.name === RouteName.LandingPage ? 'inline-block' : isScrolled ? 'inline-block' : 'hidden',
             ]"
             alt=""
           />
-          <!-- <img
+          <img
             src="@/assets/images/logo-white.png"
             class="p-8 h-28 transition-all duration-300 "
             :class="[isScrolled ? '!lg:h-[100px] h-[70px]' : '',route.name === RouteName.AboutPage || route.name === RouteName.ProductsPage ? 'inline-block':'hidden']"
             alt=""
-          /> -->
+          />
         </RouterLink>
       </div>
       <div

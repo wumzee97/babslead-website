@@ -37,17 +37,27 @@ onUnmounted(() => {
         <RouterLink to="/">
           <img
             src="@/assets/images/logo.png"
-            class="lg:h-[138px] h-[98px] transition-all duration-300"
+            class="p-8 h-28 pl-0 transition-all duration-300"
             :class="[
-              isScrolled ? 'lg:h-[100px] h-[70px]' : '',
-              route.name === RouteName.LandingPage ? 'inline-block' : isScrolled ? 'inline-block' : 'hidden',
+              isScrolled ? 'lg:h-[100px] pl-0' : '',
+              route.name === RouteName.LandingPage
+                ? 'inline-block'
+                : isScrolled
+                ? 'inline-block'
+                : 'hidden',
             ]"
             alt=""
           />
           <img
             src="@/assets/images/logo-white.png"
-            class="p-8 h-28 transition-all duration-300 "
-            :class="[isScrolled ? '!lg:h-[100px] h-[70px]' : '',route.name === RouteName.AboutPage || route.name === RouteName.ProductsPage ? 'inline-block':'hidden']"
+            class="p-8 h-28 pl-0 transition-all duration-300"
+            :class="[
+              isScrolled ? 'lg:h-[100px] h-[70px] hidden lg:inline-block' : '',
+              route.name === RouteName.AboutPage ||
+              route.name === RouteName.ProductsPage
+                ? 'inline-block'
+                : 'hidden',
+            ]"
             alt=""
           />
         </RouterLink>

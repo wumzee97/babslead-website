@@ -53,10 +53,7 @@ onUnmounted(() => {
             class="p-8 h-28 pl-0 transition-all duration-300"
             :class="[
               isScrolled ? 'lg:h-[100px] h-[70px] hidden ' : '',
-              route.name === RouteName.AboutPage ||
-              route.name === RouteName.ProductsPage
-                ? 'inline-block'
-                : 'hidden',
+              route.name !== RouteName.LandingPage ? 'inline-block' : 'hidden',
             ]"
             alt=""
           />
@@ -75,7 +72,8 @@ onUnmounted(() => {
               ? '!text-[#FAD536] font-semibold'
               : '',
             route.name !== RouteName.LandingPage ? 'text-white' : '',
-            'hover:text-[#FAD536]', isScrolled ? 'text-black' : ''
+            'hover:text-[#FAD536]',
+            isScrolled ? 'text-black' : '',
           ]"
           >Home
         </RouterLink>
@@ -86,7 +84,8 @@ onUnmounted(() => {
             route.name === RouteName.AboutPage
               ? '!text-[#FAD536]  font-semibold'
               : '',
-            'hover:text-[#FAD536]', isScrolled ? 'text-black' : '',
+            'hover:text-[#FAD536]',
+            isScrolled ? 'text-black' : '',
             route.name !== RouteName.LandingPage ? 'text-white' : '',
           ]"
           :to="{ name: RouteName.AboutPage }"
@@ -99,8 +98,9 @@ onUnmounted(() => {
             route.name === RouteName.ProductsPage
               ? '!text-[#FAD536]  font-semibold'
               : '',
-            route.name === RouteName.AboutPage ? 'text-white' : '',
-            'hover:text-[#FAD536]',isScrolled ? 'text-black' : ''
+            route.name !== RouteName.LandingPage ? 'text-white' : '',
+            'hover:text-[#FAD536]',
+            isScrolled ? 'text-black' : '',
           ]"
           :to="{ name: RouteName.ProductsPage }"
           >Services</RouterLink
@@ -108,14 +108,15 @@ onUnmounted(() => {
 
         <RouterLink
           class="text-xl hover:text-[#FAD536] transition-colors"
-          to="/#faq"
+          :to="{ name: RouteName.BlogPage }"
           :class="[
             'text-xl transition-colors',
             route.name === RouteName.BlogPage
-              ? 'text-[#FAD536]  font-semibold'
+              ? '!text-[#FAD536]  font-semibold'
               : '',
             route.name === RouteName.AboutPage ? 'text-white' : '',
-            'hover:text-[#FAD536]',isScrolled ? 'text-black' : '',
+            'hover:text-[#FAD536]',
+            isScrolled ? 'text-black' : '',
             route.name !== RouteName.LandingPage ? 'text-white' : '',
           ]"
           >Blog

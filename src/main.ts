@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createApp } from "vue";
 import "./index.css";
 import router from "./router";

@@ -46,7 +46,7 @@ import SalesOutreachImgRef from "@/assets/images/sale.outreach.png";
   <div class="bg-dark/95 lg:py-24 py-12 px-5 md:px-16 2xl:px-0">
     <div class="container max-w-7xl mx-auto text-white">
       <div class="lg:grid grid-cols-3 gap-6">
-        <div class="rounded-lg shadow-md border border-gray-50/10 hover:border-white">
+        <div v-for="i in 12" :key="i" class="rounded-lg mb-6 lg:mb-0 shadow-md border border-gray-50/10 hover:border-white">
           <img
             src="../assets/images/pathway-consultant.png"
             class="rounded-t-lg h-52 w-full object-cover object-top"
@@ -57,9 +57,9 @@ import SalesOutreachImgRef from "@/assets/images/sale.outreach.png";
               Discover the latest news and updates in our industry
             </p>
 
-            <p class="text-2xs">January 5, 2025</p>
+            <p class="text-2xs text-gray-400 my-3">January 5, 2025</p>
 
-            <RouterLink to="#">Read More >></RouterLink>
+            <RouterLink class="text-xs font-semibold" to="#">Read More >></RouterLink>
           </div>
         </div>
       </div>

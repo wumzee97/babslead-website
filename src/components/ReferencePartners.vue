@@ -32,44 +32,44 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="py-6 lg:py-24">
+  <div class="py-4 lg:py-24">
     <p class="text-center text-xl lg:text-3xl font-medium lg:mb-6">
       WORKED WITH INDIVIDUALS FROM
     </p>
 
-    <div class="partners-container overflow-hidden w-full h-24 flex items-center relative">
+    <div class="partners-container overflow-hidden w-full lg:h-24 flex items-center relative">
       <!-- Logos container -->
       <div
         ref="logos"
-        class="flex gap-16 items-center justify-center partners-logos will-change-transform"
+        class="flex gap-6 lg:gap-16 items-center justify-center partners-logos will-change-transform"
       >
-        <img src="@/assets/images/upwork.svg" class="h-10" alt="Upwork Logo" />
-        <img src="@/assets/images/gamaal.png" class="h-14" alt="Gamaal Logo" />
-        <img src="@/assets/images/linkedin.svg" class="h-28" alt="LinkedIn Logo" />
-        <img src="@/assets/images/x-logo.svg" class="h-8" alt="X Logo" />
-        <img src="@/assets/images/clickup-logo.svg" class="h-10" alt="ClickUp Logo" />
-        <img src="@/assets/images/clutch-co-vector-logo.png" class="h-16" alt="Clutch Logo" />
-        <img src="@/assets/images/midas.svg" class="h-16" alt="Midas Logo" />
-        <img src="@/assets/images/facebook.png" class="h-12" alt="Facebook Logo" />
+        <img src="@/assets/images/upwork.svg" class="h-5 lg:h-10" alt="Upwork Logo" />
+        <img src="@/assets/images/gamaal.png" class="h-7 lg:h-14" alt="Gamaal Logo" />
+        <img src="@/assets/images/linkedin.svg" class="h-14 lg:h-28" alt="LinkedIn Logo" />
+        <img src="@/assets/images/x-logo.svg" class="h-4 lg:h-8" alt="X Logo" />
+        <img src="@/assets/images/clickup-logo.svg" class="h-5 lg:h-10" alt="ClickUp Logo" />
+        <img src="@/assets/images/clutch-co-vector-logo.png" class="h-8 lg:h-16" alt="Clutch Logo" />
+        <img src="@/assets/images/midas.svg" class="h-8 lg:h-16" alt="Midas Logo" />
+        <img src="@/assets/images/facebook.png" class="h-6 lg:h-12" alt="Facebook Logo" />
         <!-- Duplicate logos for seamless scrolling -->
-        <img src="@/assets/images/upwork.svg" class="h-10" alt="Upwork Logo" />
-        <img src="@/assets/images/gamaal.png" class="h-14" alt="Gamaal Logo" />
-        <img src="@/assets/images/linkedin.svg" class="h-28" alt="LinkedIn Logo" />
-        <img src="@/assets/images/x-logo.svg" class="h-8" alt="X Logo" />
-        <img src="@/assets/images/clickup-logo.svg" class="h-10" alt="ClickUp Logo" />
-        <img src="@/assets/images/clutch-co-vector-logo.png" class="h-16" alt="Clutch Logo" />
-        <img src="@/assets/images/midas.svg" class="h-16" alt="Midas Logo" />
-        <img src="@/assets/images/facebook.png" class="h-12" alt="Facebook Logo" />
+        <img src="@/assets/images/upwork.svg" class="h-5 lg:h-10" alt="Upwork Logo" />
+        <img src="@/assets/images/gamaal.png" class="h-7 lg:h-14" alt="Gamaal Logo" />
+        <img src="@/assets/images/linkedin.svg" class="h-14 lg:h-28" alt="LinkedIn Logo" />
+        <img src="@/assets/images/x-logo.svg" class="h-4 lg:h-8" alt="X Logo" />
+        <img src="@/assets/images/clickup-logo.svg" class="h-5 lg:h-10" alt="ClickUp Logo" />
+        <img src="@/assets/images/clutch-co-vector-logo.png" class="h-8 lg:h-16" alt="Clutch Logo" />
+        <img src="@/assets/images/midas.svg" class="h-8 lg:h-16" alt="Midas Logo" />
+        <img src="@/assets/images/facebook.png" class="h-6 lg:h-12" alt="Facebook Logo" />
 
         <!-- Duplicate logos for seamless scrolling -->
-        <img src="@/assets/images/upwork.svg" class="h-10" alt="Upwork Logo" />
-        <img src="@/assets/images/gamaal.png" class="h-14" alt="Gamaal Logo" />
-        <img src="@/assets/images/linkedin.svg" class="h-28" alt="LinkedIn Logo" />
-        <img src="@/assets/images/x-logo.svg" class="h-8" alt="X Logo" />
-        <img src="@/assets/images/clickup-logo.svg" class="h-10" alt="ClickUp Logo" />
-        <img src="@/assets/images/clutch-co-vector-logo.png" class="h-16" alt="Clutch Logo" />
-        <img src="@/assets/images/midas.svg" class="h-16" alt="Midas Logo" />
-        <img src="@/assets/images/facebook.png" class="h-12" alt="Facebook Logo" />
+        <img src="@/assets/images/upwork.svg" class="h-5 lg:h-10" alt="Upwork Logo" />
+        <img src="@/assets/images/gamaal.png" class="h-7 lg:h-14" alt="Gamaal Logo" />
+        <img src="@/assets/images/linkedin.svg" class="h-14 lg:h-28" alt="LinkedIn Logo" />
+        <img src="@/assets/images/x-logo.svg" class="h-4 lg:h-8" alt="X Logo" />
+        <img src="@/assets/images/clickup-logo.svg" class="h-5 lg:h-10" alt="ClickUp Logo" />
+        <img src="@/assets/images/clutch-co-vector-logo.png" class="h-8 lg:h-16" alt="Clutch Logo" />
+        <img src="@/assets/images/midas.svg" class="h-8 lg:h-16" alt="Midas Logo" />
+        <img src="@/assets/images/facebook.png" class="h-6 lg:h-12" alt="Facebook Logo" />
 
         
       </div>

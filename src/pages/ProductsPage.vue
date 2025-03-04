@@ -30,7 +30,7 @@ const services = [
     ],
   },
   {
-    name: "X Ghost-Marketing ",
+    name: "X Ghost Marketing ",
     image: XGM,
     offers: [
       "Research",
@@ -116,7 +116,7 @@ const services = [
     offers: [
       "2 sessions",
       "2 hours video call",
-      "DFU profile optimization",
+      "DFY profile optimization",
       "Tips on understanding the algorithm",
       "Understanding content strategy",
     ],
@@ -127,7 +127,7 @@ const services = [
     offers: [
       "2 Sessions",
       "2 hours video call",
-      "DFU profile optimization",
+      "DFY profile optimization",
       "Tips on how to propose for jobs",
       "Tips on understanding up work algorithm",
     ],

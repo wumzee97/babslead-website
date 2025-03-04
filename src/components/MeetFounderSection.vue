@@ -4,12 +4,12 @@ import  IconTwitter from "./icons/IconTwitter.vue";
 </script>
 
 <template>
-  <div class="py-12 lg:py-24 bg-munsell/5">
+  <div class="py-12 lg:py-24 bg-dark">
     <div class="container max-w-7xl mx-auto px-5 md:px-16 2xl:px-0 pb-16">
       <p
         data-aos="fade-up"
         data-aos-duration="1000"
-        class="font-semibold text-3xl lg:text-5xl text-dark-brown text-center"
+        class="font-semibold text-3xl lg:text-5xl text-gray-200 text-center"
       >
         Meet Our Founder
       </p>
@@ -21,7 +21,7 @@ import  IconTwitter from "./icons/IconTwitter.vue";
           data-aos="fade-right"
           data-aos-delay="1000"
           data-aos-duration="1000"
-          class="col-span-8 text-dark-brown"
+          class="col-span-8 text-white"
         >
           <p class="text-xl lg:text-3xl font-semibold">
             Hi there! My name is Babatunde James

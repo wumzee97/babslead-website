@@ -40,21 +40,15 @@ onUnmounted(() => {
             class="p-8 h-28 pl-0 transition-all duration-300"
             :class="[
               isScrolled ? 'lg:h-[100px] pl-0' : '',
-              route.name === RouteName.LandingPage
-                ? 'inline-block'
-                : isScrolled
-                ? 'inline-block'
-                : 'hidden',
+
+              isScrolled ? 'inline-block' : 'hidden',
             ]"
             alt=""
           />
           <img
             src="@/assets/images/logo-white.png"
             class="p-8 h-28 pl-0 transition-all duration-300"
-            :class="[
-              isScrolled ? 'lg:h-[100px] h-[70px] hidden ' : '',
-              route.name !== RouteName.LandingPage ? 'inline-block' : 'hidden',
-            ]"
+            :class="[isScrolled ? 'lg:h-[100px] h-[70px] hidden ' : 'inline-block']"
             alt=""
           />
         </RouterLink>
@@ -71,9 +65,9 @@ onUnmounted(() => {
             route.name === RouteName.LandingPage
               ? '!text-[#FAD536] font-semibold'
               : '',
-            route.name !== RouteName.LandingPage ? 'text-white' : '',
+            
             'hover:text-[#FAD536]',
-            isScrolled ? 'text-black' : '',
+            isScrolled ? 'text-black' : 'text-white',
           ]"
           >Home
         </RouterLink>
@@ -85,8 +79,8 @@ onUnmounted(() => {
               ? '!text-[#FAD536]  font-semibold'
               : '',
             'hover:text-[#FAD536]',
-            isScrolled ? 'text-black' : '',
-            route.name !== RouteName.LandingPage ? 'text-white' : '',
+            isScrolled ? 'text-black' : 'text-white',
+            
           ]"
           :to="{ name: RouteName.AboutPage }"
           >About Us</RouterLink
@@ -98,9 +92,9 @@ onUnmounted(() => {
             route.name === RouteName.ProductsPage
               ? '!text-[#FAD536]  font-semibold'
               : '',
-            route.name !== RouteName.LandingPage ? 'text-white' : '',
+            
             'hover:text-[#FAD536]',
-            isScrolled ? 'text-black' : '',
+            isScrolled ? 'text-black' : 'text-white',
           ]"
           :to="{ name: RouteName.ProductsPage }"
           >Services</RouterLink
@@ -114,10 +108,10 @@ onUnmounted(() => {
             route.name === RouteName.BlogPage
               ? '!text-[#FAD536]  font-semibold'
               : '',
-            route.name === RouteName.AboutPage ? 'text-white' : '',
+            
             'hover:text-[#FAD536]',
-            isScrolled ? 'text-black' : '',
-            route.name !== RouteName.LandingPage ? 'text-white' : '',
+            isScrolled ? 'text-black' : 'text-white',
+            
           ]"
           >Blog
         </RouterLink>

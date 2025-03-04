@@ -40,6 +40,10 @@ export default {
       backgroundImage: {
         "benefit-gradient":
           "linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%)",
+
+        "hero-gradient":
+          // "radial-gradient(circle, #65558F 0%, #160C22 100%);",
+          "radial-gradient(circle at 80% center, #65558F 0%, #160C22 100%)",
       },
       boxShadow: {
         switch: "0px 1px 3px 0px #00000066",

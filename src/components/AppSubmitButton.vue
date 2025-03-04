@@ -24,7 +24,7 @@ const props = withDefaults(
     :to="props.to"
     :type="props.type"
     :disabled="props.disabled || props.loading"
-    class="w-full rounded-full hover:opacity-80 py-4 px-6 text-sm sm:text-base font-medium flex items-center justify-center flex-wrap disabled:opacity-40 disabled:cursor-not-allowed"
+    class="w-full rounded-full hover:opacity-80 py-4 px-6 text-sm sm:text-base font-medium flex items-center justify-center flex-wrap disabled:opacity-40 disabled:cursor-not-allowed hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
     :class="
       props.outlined
         ? 'border dark:border-dark-border-subdued border-primary-500 text-white'
@@ -33,10 +33,7 @@ const props = withDefaults(
         : 'bg-primary-500 text-white'
     "
   >
-  <div class="" v-if="props.loading">
-
-    <IconSpinner  /> Please wait...
-  </div>
+    <div class="" v-if="props.loading"><IconSpinner /> Please wait...</div>
     <slot v-else></slot>
   </component>
 </template>

@@ -37,7 +37,7 @@ const menuItems = [
           class="w-full h-[3px] bg-primary-500 transform transition-all duration-300"
           :class="{
             'rotate-45 translate-y-2 bg-black': isOpen,
-            'bg-white': route.name !== RouteName.LandingPage,
+            'bg-white': !isOpen,
             '!bg-black': (route.name !== RouteName.LandingPage && isOpen) || props.isScrolled,
             
           }"
@@ -46,7 +46,7 @@ const menuItems = [
           class="w-full h-[3px] bg-primary-500 transition-all duration-300"
           :class="{
             'opacity-0': isOpen,
-            'bg-white': route.name !== RouteName.LandingPage,
+            'bg-white': !isOpen,
             '!bg-black': (route.name !== RouteName.LandingPage && isOpen) || props.isScrolled,
           }"
         ></span>
@@ -54,7 +54,7 @@ const menuItems = [
           class="w-full h-[3px] bg-primary-500 transform transition-all duration-300"
           :class="{
             '-rotate-45 -translate-y-2 bg-black': isOpen,
-            'bg-white': route.name !== RouteName.LandingPage,
+            'bg-white': !isOpen,
             '!bg-black': (route.name !== RouteName.LandingPage && isOpen) || props.isScrolled,
           }"
         ></span>

@@ -1,16 +1,17 @@
 <script setup lang="ts">
+// @ts-nocheck
 import { useRoute, RouterView } from "vue-router";
 import { useHead } from "@vueuse/head";
 import { computed, watch } from "vue";
 
 const route = useRoute();
 
-const pageTitle = computed(() => route.meta.title || "Default Title");
+const pageTitle = computed(() => route.meta.title || "BabsLead");
 const pageDescription = computed(
-  () => route.meta.description || "Default Description"
+  () => route.meta.description || "Transforming Personal Brand into a Traffic Machine"
 );
 const ogImage = computed(
-  () => route.meta.ogImage || "https://example.com/default-image.jpg"
+  () => route.meta.ogImage || "https://babslead.com/babslead.jpg"
 );
 
 useHead({

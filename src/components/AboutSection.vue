@@ -59,8 +59,8 @@ const features: IFeatures[] = [
 
             <p class="mt-7">
               With our expertise in social media management, community building,
-              and sales outreach, we have helped 20+ business owners transform
-              their brands, surpassing 5M impressions and over 1000 leads
+              and sales outreach, we have helped 30+ business owners transform
+              their brands, surpassing 10M impressions and over 1000 leads
               generated.
             </p>
 

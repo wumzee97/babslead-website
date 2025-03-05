@@ -16,7 +16,7 @@ import LomilImg from "@/assets/images/Lomil.jpeg";
 interface ITestimonial {
   id: number;
   name: string;
-  image: string;
+  image: string | undefined;
   designation: string;
   rating: number;
   comment: string;
@@ -144,11 +144,11 @@ function scrollRight() {
     <div
       class="absolute inset-0 bg-cover bg-no-repeat bg-center bg-[url('/src/assets/images/design.png')]"
     >
-      <div class="absolute inset-0 bg-dark bg-opacity-[90%]"></div>
+      <div class="absolute inset-0 bg-white bg-opacity-[95%]"></div>
     </div>
     <div class="relative">
       <div class="container max-w-7xl mx-auto py-8 px-5 md:px-16 2xl:px-0">
-        <p class="font-medium text-white lg:text-4xl text-[28px]">
+        <p class="font-medium text-dark lg:text-4xl text-[28px]">
           What does our client say about us?
         </p>
         <img src="../assets/images/underline.svg" alt="" />

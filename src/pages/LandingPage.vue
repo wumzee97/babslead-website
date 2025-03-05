@@ -69,16 +69,16 @@ onMounted(() => {
 <template>
   <div>
     <div
-      class="hero-b bg-hero-gradient bg-no-repeat -mt-[190px] pt-32 lg:pt-32 relative overflow-hidden"
+      class="hero-bg bg-hero-gradien bg-no-repeat -mt-[190px] pt-32 lg:pt-32 relative overflow-hidden"
       ref="heroRef"
     >
       <!-- Animated gradient background -->
-      <div
+      <!-- <div
         class="absolute inset-0 bg-gradient-to-br from-schemes-primary-default via-dark to-schemes-primary-container animate-gradient"
-      ></div>
+      ></div> -->
 
       <!-- Floating shapes -->
-      <div ref="shapesRef" class="absolute inset-0 overflow-hidden">
+      <!-- <div ref="shapesRef" class="absolute inset-0 overflow-hidden">
         <div
           class="shape rounded-full bg-white/10 w-64 h-64 absolute top-1/4 left-1/4 backdrop-blur-xl animate-float-slow"
         ></div>
@@ -94,7 +94,7 @@ onMounted(() => {
         <div
           class="shape rounded-full bg-white/10 w-40 h-40 absolute top-2/3 left-1/6 backdrop-blur-xl animate-float-slow"
         ></div>
-      </div>
+      </div> -->
 
       <!-- Hero content -->
       <div class="hero-content relative z-10">

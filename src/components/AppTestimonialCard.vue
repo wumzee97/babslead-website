@@ -17,7 +17,7 @@ const props = defineProps<TestimonialProps>();
 </script>
 <template>
   <div
-    class="lg:p-6 p-4 border border-gray-50/10 bg-dark lg:rounded-[10px] rounded-[6px] min-w-[400px]"
+    class="lg:p-6 p-4 border border-gray-50/10 bg-white shadow-md m-3 lg:rounded-[10px] rounded-[6px] min-w-[400px]"
   >
     <div class="flex justify-between items-center">
       <div class="text-sm lg:text-base flex gap-3 items-center">
@@ -42,7 +42,7 @@ const props = defineProps<TestimonialProps>();
       </div>
     </div>
 
-    <p class="lg:text-sm text-xs text-gray-200 mt-3">
+    <p class="lg:text-sm text-xs text-primary-500 mt-3">
       {{ testimonial.comment }}
     </p>
     <p class="lg:text-xs text-2xs mt-2 text-gray-400">{{ testimonial.date }}</p>

@@ -18,18 +18,18 @@ function getImageUrl(name: string) {
       class="flex flex-col items-center justify-center lg:min-h-[550px] py-12 lg:py-0"
     >
       <h1
-        class="text-3xl lg:text-5xl text-white text-center font-semibold lg:!leading-[80px] leading-[40px]"
+        class="text-3xl lg:text-5xl text-primary-500 text-center font-semibold lg:!leading-[80px] leading-[40px]"
       >
-        <span class="font-normal mb-7 text-xl lg:text-5xl text-white">
+        <span class="font-normal mb-7 text-xl lg:text-5xl text-primary-500">
           Transforming</span
         >
         <br />
         <span class="text-4xl lg:text-6xl mt-6">
-          Personal Brand into a Traffic Machine
+          Personal Brands into a Traffic Machine
         </span>
       </h1>
       <p
-        class="text-white text-center lg:text-xl font-medium mt-4 lg:mt-6"
+        class="text-primary-500 text-center lg:text-xl font-medium mt-4 lg:mt-6"
       >
         Stand out with sociable content and convert your target audience.
       </p>

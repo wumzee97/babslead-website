@@ -30,7 +30,7 @@ onUnmounted(() => {
     <nav
       class="container max-w-7xl mx-auto flex justify-between items-center z-50 px-5 2xl:px-0 top-0 fixed transition-all duration-300"
       :class="[
-        isScrolled ? 'bg-white shadow-lg py-2 !px-6' : 'py-0 bg-transparent',
+        isScrolled ? 'bg-dark shadow-lg py-2 !px-6' : 'py-0 bg-transparent',
       ]"
     >
       <div>
@@ -41,21 +41,25 @@ onUnmounted(() => {
             :class="[
               isScrolled ? 'lg:h-[100px] pl-0' : '',
 
-              isScrolled ? 'inline-block' : 'hidden',
+              isScrolled ? 'hidden' : 'inline-block',
+              route.name !== RouteName.LandingPage ? 'hidden' : 'inline-block',
             ]"
             alt=""
           />
           <img
             src="@/assets/images/logo-white.png"
             class="p-8 h-28 pl-0 transition-all duration-300"
-            :class="[isScrolled ? 'lg:h-[100px] h-[70px] hidden ' : 'inline-block']"
+            :class="[
+              isScrolled ? 'lg:h-[100px] h-[70px] ' : 'inline-block',
+              route.name === RouteName.LandingPage && !isScrolled ? 'hidden' : 'inline-block',
+            ]"
             alt=""
           />
         </RouterLink>
       </div>
       <div
         class="hidden lg:flex gap-12"
-        :class="isScrolled ? '!text-black' : ''"
+        :class="isScrolled ? '!text-white' : ''"
       >
         <RouterLink
           class="text-xl hover:text-[#FAD536] transition-colors"
@@ -65,9 +69,13 @@ onUnmounted(() => {
             route.name === RouteName.LandingPage
               ? '!text-[#FAD536] font-semibold'
               : '',
-            
+
             'hover:text-[#FAD536]',
-            isScrolled ? 'text-black' : 'text-white',
+            isScrolled
+              ? 'text-white'
+              : route.name !== RouteName.LandingPage
+              ? 'text-white'
+              : 'text-dark',
           ]"
           >Home
         </RouterLink>
@@ -79,8 +87,11 @@ onUnmounted(() => {
               ? '!text-[#FAD536]  font-semibold'
               : '',
             'hover:text-[#FAD536]',
-            isScrolled ? 'text-black' : 'text-white',
-            
+            isScrolled
+              ? 'text-white'
+              : route.name !== RouteName.LandingPage
+              ? 'text-white'
+              : 'text-dark',
           ]"
           :to="{ name: RouteName.AboutPage }"
           >About Us</RouterLink
@@ -92,9 +103,13 @@ onUnmounted(() => {
             route.name === RouteName.ProductsPage
               ? '!text-[#FAD536]  font-semibold'
               : '',
-            
+
             'hover:text-[#FAD536]',
-            isScrolled ? 'text-black' : 'text-white',
+            isScrolled
+              ? 'text-white'
+              : route.name !== RouteName.LandingPage
+              ? 'text-white'
+              : 'text-dark',
           ]"
           :to="{ name: RouteName.ProductsPage }"
           >Services</RouterLink
@@ -108,10 +123,13 @@ onUnmounted(() => {
             route.name === RouteName.BlogPage
               ? '!text-[#FAD536]  font-semibold'
               : '',
-            
+
             'hover:text-[#FAD536]',
-            isScrolled ? 'text-black' : 'text-white',
-            
+            isScrolled
+              ? 'text-white'
+              : route.name !== RouteName.LandingPage
+              ? 'text-white'
+              : 'text-dark',
           ]"
           >Blog
         </RouterLink>

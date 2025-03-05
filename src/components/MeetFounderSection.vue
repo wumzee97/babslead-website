@@ -38,8 +38,8 @@ import IconTwitter from "./icons/IconTwitter.vue";
           </p>
 
           <p class="mt-6 text-lg">
-            Today, we have supported over 20 brands and helped them deliver
-            powerful & engaging content with over 5M impressions & 1000 leads
+            Today, we have supported over 30 brands and helped them deliver
+            powerful & engaging content with over 10M impressions & 1000 leads
             generated.
           </p>
         </div>

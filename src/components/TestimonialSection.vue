@@ -9,10 +9,22 @@ import NicoGarciaImg from "@/assets/images/nico.garcia.jpeg";
 import OnyekaImg from "@/assets/images/onyeka.felix.jpeg";
 import FatoumataImg from "@/assets/images/fatoumata.jpeg";
 import EdwardImg from "@/assets/images/edward.kofa.jpeg";
-// import
+import KelvinImg from "@/assets/images/kelvin.jpeg";
+import SouImg from "@/assets/images/Souheir.jpeg";
+import LomilImg from "@/assets/images/Lomil.jpeg";
+
+interface ITestimonial {
+  id: number;
+  name: string;
+  image: string;
+  designation: string;
+  rating: number;
+  comment: string;
+  date: string;
+}
 
 const selected = ref<"parent" | "tutors" | "student">("parent");
-const testimonials = [
+const testimonials: ITestimonial[] = [
   {
     id: 1,
     name: "Brian Montes",
@@ -82,6 +94,36 @@ const testimonials = [
     comment:
       "I'm not really a big fan of making testimonials but I had to make one for James and helping me with the right strategies, correct the errors I was making in building my own personal brand on Twitter. He connects me with the right frameworks and sent me on the path to understand the nature of branding in the Twitter space. So, I really just want to sit down and say thank you and for anybody who's trying to connect with James, I highly recommend it. He will set you on the right path and give you the right frameworks to grow your business. So thank you.",
     date: "May 2023",
+  },
+  {
+    id: 8,
+    name: "Kevin Goodwin",
+    designation: "CEO Goodwin Academy",
+    image: KelvinImg,
+    rating: 5,
+    comment:
+      "Babatunde had very pointed questions that go to the heart of what was needed and we very thorough in breaking down what is needed to achieve the results that I'm looking for. I will definitely work with him again.",
+    date: "Feb 2025",
+  },
+  {
+    id: 9,
+    name: "Souheir Amin",
+    designation: "Senior Marketing Manager FMCG360",
+    image: SouImg,
+    rating: 5,
+    comment:
+      "James is a good content writer. We've enjoyed working with him and will definitely do it again",
+    date: "Feb 2025",
+  },
+  {
+    id: 10,
+    name: "Lomil Truitt",
+    designation: "CEO Perpetual Deal Flow",
+    image: LomilImg,
+    rating: 5,
+    comment:
+      "Baba was incredibly insightful during our session. His expertise in clarity and profile optimization helped me refine my direction, and his patience in truly listening to my needs made all the difference. I walked away with a clearer vision and actionable steps. Highly recommend working with him!",
+    date: "Feb 2025",
   },
 ];
 

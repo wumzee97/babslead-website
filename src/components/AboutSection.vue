@@ -30,7 +30,7 @@ const features: IFeatures[] = [
   },
   {
     id: 4,
-    title: "Content Creation",
+    title: "Sales Outreach",
     description:
       "We support your brand via personalized sales outreach to 3x your revenue.",
   },
@@ -112,7 +112,7 @@ const features: IFeatures[] = [
               >
                 <span class="text-2xl lg:text-5xl font-semibold"> 30+ </span
                 ><br />
-                <span>Partners</span>
+                <span>Businesses</span>
               </div>
 
               <div

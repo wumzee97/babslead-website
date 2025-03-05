@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import IconLinkedin from "./icons/IconLinkedin.vue";
-import  IconTwitter from "./icons/IconTwitter.vue";
+import IconTwitter from "./icons/IconTwitter.vue";
 </script>
 
 <template>
@@ -28,8 +28,8 @@ import  IconTwitter from "./icons/IconTwitter.vue";
           </p>
 
           <p class="mt-8 text-lg">
-            BabsLead was founded out of passion to help business owners and the
-            world scale their business online.
+            BabsLead was founded out of passion to help Founders & CEOs scales
+            their business online.
           </p>
 
           <p class="mt-6 text-lg">
@@ -57,14 +57,21 @@ import  IconTwitter from "./icons/IconTwitter.vue";
             />
           </div>
           <div class="flex gap-2 mt-2 justify-center">
-            <a href="https://www.linkedin.com/in/babatundejames" target="_blank">
-              <button class="h-8 w-8 flex items-center justify-center rounded-full bg-blue-600">
+            <a
+              href="https://www.linkedin.com/in/babatundejames"
+              target="_blank"
+            >
+              <button
+                class="h-8 w-8 flex items-center justify-center rounded-full bg-blue-600"
+              >
                 <IconLinkedin />
               </button>
             </a>
 
             <a href="https://x.com/Jameswritess" target="_blank">
-              <button class="h-8 w-8 flex items-center justify-center rounded-full bg-black">
+              <button
+                class="h-8 w-8 flex items-center justify-center rounded-full bg-black"
+              >
                 <IconTwitter />
               </button>
             </a>

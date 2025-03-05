@@ -3,34 +3,40 @@ import AppSubmitButton from "./AppSubmitButton.vue";
 import ContentCreationImgRef from "@/assets/images/content-creation.png";
 import BrandingImgRef from "@/assets/images/branding.png";
 import DesignsImgRef from "@/assets/images/designs.png";
-import ProfileManagementImgRef from '@/assets/images/profile-management.png'
+import ProfileManagementImgRef from '@/assets/images/profile-manage.png'
 import ProfileOptimizationImgRef from '@/assets/images/profile-optimization.png'
-import SalesOutreachImgRef from '@/assets/images/sale.outreach.png'
+import SalesOutreachImgRef from '@/assets/images/sales-outreach.png'
 import { RouteName } from "@/utils/enums";
 
 const packages = [
   {
     title: "Content Creation",
+    description: "Craft powerful and engaging content that appeal to your audience.",
     image: ContentCreationImgRef,
   },
   {
     title: "Branding",
+    description: "Craft a brand identity that speaks to your personality and is easily recognizable.",
     image: BrandingImgRef,
   },
   {
     title: "Designs",
+    description: "Create stunning visuals that appeals and capture your audience attention.",
     image: DesignsImgRef,
   },
   {
     title: "Profile Management",
+    description: "Save 20-30 hours delegating your brand to experienced Virtual Assistants",
     image: ProfileManagementImgRef,
   },
   {
     title: "Profile Optimization",
+    description: "Optimize your brand profile for maximum reach and visibility.",
     image: ProfileOptimizationImgRef,
   },
   {
     title: "Sales Outreach",
+    description: "Scale your brand via personalized sales outreach to 3x your revenue.",
     image: SalesOutreachImgRef,
   },
 ];
@@ -57,14 +63,17 @@ const packages = [
         We offer a variety of packages including...
       </p>
 
-      <div class="flex flex-wrap justify-center gap-6 mt-16 cursor-pointer">
+      <div class="grid lg:grid-cols-3 gap-16 mt-16 cursor-pointer">
         <div
-          class="rounded w-[400px] text-center"
+          class="rounded "
           v-for="pkg in packages"
           :key="pkg.title"
         >
-          <img :src="pkg.image" alt="">
-          <RouterLink :to="{name: RouteName.ProductsPage}" class="text-white bg-munsell p-3 text-left text-lg  lg:text-2xl font-semibold flex justify-between items-center">{{ pkg.title }} <span class="text-base">View Details</span></RouterLink>
+          <img :src="pkg.image" class="w-[80px]" alt="">
+
+          <p class=" text-white font-semibold text-xl mt-6">{{ pkg.title }}</p>
+          <p class="text-gray-200 mt-4">{{ pkg.description }}</p>
+          <!-- <RouterLink :to="{name: RouteName.ProductsPage}" class="text-white bg-munsell p-3 text-left text-lg  lg:text-2xl font-semibold flex justify-between items-center">{{ pkg.title }} <span class="text-base">View Details</span></RouterLink> -->
 
           <!-- <AppSubmitButton type="button" class="mt-8">
             View Pricing</AppSubmitButton

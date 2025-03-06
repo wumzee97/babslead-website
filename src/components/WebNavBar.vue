@@ -48,7 +48,7 @@ onUnmounted(() => {
           />
           <img
             src="@/assets/images/logo-white.png"
-            class="p-8 h-28 pl-0 transition-all duration-300"
+            class="p-4 h-28 pl-0 transition-all duration-300"
             :class="[
               isScrolled ? 'lg:h-[100px] h-[70px] ' : 'inline-block',
               route.name === RouteName.LandingPage && !isScrolled ? 'hidden' : 'inline-block',

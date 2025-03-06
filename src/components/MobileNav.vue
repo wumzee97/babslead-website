@@ -36,26 +36,33 @@ const menuItems = [
         <span
           class="w-full h-[3px] bg-primary-500 transform transition-all duration-300"
           :class="{
-            'rotate-45 translate-y-2 bg-black': isOpen,
-            'bg-white': !isOpen,
-            '!bg-black': (route.name !== RouteName.LandingPage && isOpen) || props.isScrolled,
-            
+            'rotate-45 translate-y-2 ': isOpen,
+
+            'bg-white':
+              (route.name !== RouteName.LandingPage ) ||
+              props.isScrolled ||
+              isOpen,
           }"
         ></span>
         <span
           class="w-full h-[3px] bg-primary-500 transition-all duration-300"
           :class="{
             'opacity-0': isOpen,
-            'bg-white': !isOpen,
-            '!bg-black': (route.name !== RouteName.LandingPage && isOpen) || props.isScrolled,
+            'bg-white':
+              (route.name !== RouteName.LandingPage) ||
+              props.isScrolled ||
+              isOpen,
           }"
         ></span>
         <span
           class="w-full h-[3px] bg-primary-500 transform transition-all duration-300"
           :class="{
             '-rotate-45 -translate-y-2 bg-black': isOpen,
-            'bg-white': !isOpen,
-            '!bg-black': (route.name !== RouteName.LandingPage && isOpen) || props.isScrolled,
+
+            'bg-white':
+              (route.name !== RouteName.LandingPage) ||
+              props.isScrolled ||
+              isOpen,
           }"
         ></span>
       </div>
@@ -64,7 +71,7 @@ const menuItems = [
     <!-- Mobile Menu -->
     <TransitionRoot appear :show="isOpen" as="template">
       <div
-        class="fixed h-screen inset-0 z-40 bg-white overflow-hidden"
+        class="fixed h-screen inset-0 z-40 bg-dark overflow-hidden"
         :class="{ 'pointer-events-none': !isOpen }"
       >
         <div
@@ -79,7 +86,7 @@ const menuItems = [
               v-for="item in menuItems"
               :key="item.title"
               :to="item.path"
-              class="text-2xl font-normal hover:text-gray-600 transition-colors duration-200 border-b border-[#E6EAEE] pb-4"
+              class="text-2xl font-normal text-white hover:text-gray-600 transition-colors duration-200 border-b border-gray-50/20 pb-4"
             >
               {{ item.title }}
             </RouterLink>
